@@ -1,7 +1,7 @@
-import * as S from "./inicioStyle.jsx"
+import * as S from "./formStyle.jsx"
 import Input from "../Input/input.jsx"
 
-function Inicio() {
+function Form() {
     return (
         <S.Form>
             <div>
@@ -17,4 +17,4 @@ function Inicio() {
     )
 }
 
-export default Inicio
+export default Form
