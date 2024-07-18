@@ -1,19 +1,11 @@
 import styled from "styled-components"
 
-export const Inicio = styled.div`
-width: 100vw;
+export const Form = styled.div`
+max-width: 400px;
+margin: 0 auto;
+padding: 20px;
+background-color: #f2f2f2;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 height: 100vh;
-background-color: #03a9f417;
-display: flex;
-justify-content: center;
-align-items: center;
-`
-
-export const Div = styled.div`
-width: 35rem;
-height: 35rem;
-background-color: #a0c9ce;
-border-radius: 3rem;
-// display: flex;
-// justify-content: space-evenly;
 `

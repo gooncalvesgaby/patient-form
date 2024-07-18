@@ -1,11 +1,14 @@
 import styled from "styled-components"
 
 export const Input = styled.input`
-border: 2px solid gray;
-border-radius: 1rem;
-width: 15rem;
 height: 3rem;
 background-color: #c9d6dc;
 color: #373535e6;
-margin-top: 5%;
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box; 
+font-size: 16px;
 `
