@@ -1,9 +1,11 @@
 import * as S from "./formStyle.jsx"
 import Input from "../Input/input.jsx"
+import Button from "../Button/button.jsx"
 
 function Form() {
     return (
         <S.Form>
+            <S.H1>Formulário do Paciente</S.H1>
             <div>
                 <Input type="text" placeholderText="Digite o nome do paciente"></Input>
                 <Input type="number" placeholderText="Peso do Paciente"></Input>
@@ -13,6 +15,9 @@ function Form() {
                 <Input type="text" placeholderText="Procedimento a ser realizado"></Input>
                 <Input type="date" placeholderText="Data de nascimento"></Input>
             </div>
+            <S.Div>
+                <Button text="ENVIAR" />
+            </S.Div>
         </S.Form>
     )
 }

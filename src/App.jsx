@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
-// import Form from "./Components/Form/form.jsx"
-import Button from "./Components/Button/button.jsx"
+import Form from "./Components/Form/form.jsx"
+
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -15,8 +15,7 @@ function App() {
   return (
     <>
     <GlobalStyle/>
-    {/* <Form/> */}
-    <Button/>
+    <Form/>
     </>
   )
 }
