@@ -1,9 +1,9 @@
 import * as S from "./inputStyle.jsx"
 
-function Input(props) {
+function Input({type, placeholderText}) {
     return(
         <>
-        <S.Input type="text" placeholder="Nome do Paciente">{props.text}</S.Input>
+        <S.Input type={type} placeholder={placeholderText}></S.Input>
         </>
     )
 }
