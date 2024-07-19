@@ -7,13 +7,13 @@ function Form() {
         <S.Form>
             <S.H1>Formulário do Paciente</S.H1>
             <div>
-                <Input type="text" placeholderText="Digite o nome do paciente"></Input>
-                <Input type="number" placeholderText="Peso do Paciente"></Input>
-                <Input type="number" placeholderText="Informe seu CPF"></Input>
-                <Input type="number" placeholderText="Altura do Paciente"></Input>
-                <Input type="text" placeholderText="Nome da Mãe"></Input>
-                <Input type="text" placeholderText="Procedimento a ser realizado"></Input>
-                <Input type="date" placeholderText="Data de nascimento"></Input>
+                <Input type="email" id="email" placeholderText="E-mail do paciente" />
+                <Input type="text" placeholderText="Digite o nome do paciente" />
+                <Input type="number" placeholderText="Peso do Paciente" />
+                <Input type="number" placeholderText="Altura do Paciente" />
+                <Input type="text" placeholderText="Nome da Mãe" />
+                <Input type="text" placeholderText="Procedimento a ser realizado" />
+                <Input type="date" placeholderText="Data de nascimento" />
             </div>
             <S.Div>
                 <Button text="ENVIAR" />

@@ -1,9 +1,9 @@
 import * as S from "./buttonStyle.jsx"
 
-function Button( props) {
+function Button(props) {
     return (
         <>
-        <S.Button>{props.text}</S.Button>
+        <S.Button type="submit">{props.text}</S.Button>
         </>
     )
 }

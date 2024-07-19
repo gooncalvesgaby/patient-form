@@ -3,7 +3,7 @@ import * as S from "./inputStyle.jsx"
 function Input({type, placeholderText}) {
     return(
         <>
-        <S.Input type={type} placeholder={placeholderText}></S.Input>
+        <S.Input type={type} placeholder={placeholderText} />
         </>
     )
 }
