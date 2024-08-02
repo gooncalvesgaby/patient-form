@@ -11,21 +11,24 @@ function Form() {
     const [surgery, setSurgery] = useState("");
     const [date, setDate] = useState("");
 
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     function validar() {
-        if(email == ""){
+        
+        if(!regex.test(email) || email =="") {
             alert('Digite um email válido')
             return;
         }
-        if(patient == ""){
+        if(patient == "" || patient.length < 5){
             alert('Informe o nome do paciente')
             return;
         }
-        if(peso == ""){
-            alert('Informe o peso do paciente')
+        if(peso == "" || peso < 0){
+            alert('Informe o peso do paciente usando apenas números')
             return;
         }
-        if(altura == ""){
-            alert('Informe a altura do paciente')
+        if(altura == "" || altura < 0){
+            alert('Informe a altura do paciente usando apenas números')
             return;
         }
         if(name == ""){
@@ -33,11 +36,11 @@ function Form() {
             return;
         }
         if(surgery == ""){
-            alert('Informe o procedimento a ser realizado')
+            alert('Informe o nome do procedimento a ser realizado')
             return;
         }
         if(date == ""){
-            alert('Informe a data da cirurgia')
+            alert('Informe a data completa da cirurgia')
             return;
         }
     }
@@ -46,10 +49,10 @@ function Form() {
         <S.Form>
             <S.H1>Formulário do Paciente</S.H1>
             <div>
-                <S.Input type="email" placeholder="E-mail do paciente" value={email} onChange={(ev) => setEmail(ev.target.value)}/>
+                <S.Input id="email" type="email" placeholder="E-mail do paciente" value={email} onChange={(ev) => setEmail(ev.target.value)}/>
                 <S.Input type="text" placeholder="Digite o nome do paciente" value={patient} onChange={(ev) => setPatient(ev.target.value)} />
-                <S.Input type="text" placeholder="Peso do Paciente" value={peso} onChange={(ev) => setPeso(ev.target.value)} />
-                <S.Input type="text" placeholder="Altura do Paciente" value={altura} onChange={(ev) => setAltura(ev.target.value)} />
+                <S.Input type="number" step="0.1" min="0" placeholder="Peso do Paciente" value={peso} onChange={(ev) => setPeso(ev.target.value)} />
+                <S.Input type="number" step="0.1" min="0" placeholder="Altura do Paciente" value={altura} onChange={(ev) => setAltura(ev.target.value)} />
                 <S.Input type="text" placeholder="Nome da Mãe" value={name} onChange={(ev) => setName(ev.target.value)} />
                 <S.Input type="text" placeholder="Procedimento a ser realizado" value={surgery} onChange={(ev) => setSurgery(ev.target.value)} />
                 <S.Input type="date" placeholder="Data de nascimento" value={date} onChange={(ev) => setDate(ev.target.value)} />
