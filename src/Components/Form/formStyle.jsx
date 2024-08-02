@@ -25,3 +25,29 @@ display: flex;
 justify-content: center;
 margin-bottom: 5px;
 `
+
+export const Button = styled.button`
+width: 15rem;
+height: 8vh;
+color: black;
+border-radius: 6vh;
+background: linear-gradient(89deg, #c9d6dc, #CCC);
+border: none;
+font-size: 20px;
+cursor: pointer;
+`
+
+export const Input = styled.input`
+height: 3rem;
+background-color: #c9d6dc;
+color: #373535e6;
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box; 
+font-size: 16px;
+`
+
+
